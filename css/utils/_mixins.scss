@@ -1,0 +1,17 @@
+@mixin btn-gradende {
+    background:linear-gradient($primarycolor,$secondarycolor);
+    border-radius: 30px;
+    color: white;
+    font-weight: 600;
+    font-size: medium;
+    border: none;
+    box-shadow: 2px 4px 10px rgb(173, 173, 173);
+    width: 30%;
+    height: 60px;
+}
+
+@mixin boxshadow { box-shadow: 2px 4px 10px rgb(173, 173, 173);
+    
+}
+
+    

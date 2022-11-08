@@ -1,0 +1,77 @@
+header{display:flex;
+flex-direction: column;
+flex-wrap: wrap;
+align-items: center;
+width: 100%;
+
+text-align: center;
+ .logo {margin: 20px 0PX 20PX 0PX;;
+display: FLEX;
+justify-content: center;
+object-fit: cover;
+img {width:50%;}}
+    .loc { padding: 20px 0px ;
+        background-color: #EAEAEA;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: black;   
+        .fa-location-dot {
+            margin-right: 10px;}
+        .input{
+            font-size: large;
+            background-color: #EAEAEA;
+            border: none;
+            color: black
+             }
+       
+    }  
+        .calltoaction {
+            display:flex;
+            flex-direction: column;;
+            background-color: #F7F7F7;
+            width:100%;
+            align-items: center;
+            
+            .header__btn {@include btn-gradende;
+            margin: 20px;
+            @media screen and (max-width :768px) 
+            {width: 70%;}}
+            
+            h2 {margin: 20px;
+                font-size: 30px;
+           
+
+               
+            
+            }}}
+    
+.header__alafrancaise {display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0;
+    &__logoretour{width: 100%;
+        display: flex;
+        flex-direction: row;
+   align-items: center;
+   justify-content: center;
+    &i {position: absolute;
+        
+    }
+    & img {display: flex;
+    justify-content: center;}
+  }
+  &__banniere {
+    width: 100%;
+   img {width: 100%;
+    height: 350px;
+    object-fit: cover;
+}}
+    
+    & i {font-size:xx-large;
+    display: flex;
+    justify-content: flex-start;
+flex-direction: row;}
+}
+    
