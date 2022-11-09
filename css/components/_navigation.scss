@@ -3,7 +3,7 @@
     
 
     &__titre {font-size:  25px;
-    margin-left: 30px;;}
+    margin-left: 20px;}
 
     &__list {display:flex;
     flex-direction: row;
@@ -20,13 +20,15 @@
     align-items: center;
     font-weight: 500;
     font-size: larger;
+    color: black;
     border-radius: 20px;
     width: 30%;
     height: 70px;
     box-shadow: 0px 5px 8px rgb(173, 173, 173);
     background-color:#F4F4F4 ;
     margin-right: 5%;
-    color: grey; 
+    & i {color: grey;}
+    
     @media screen and (max-width :768px)      {width: 100%;
     margin-bottom: 20px;}
 }
