@@ -11,16 +11,15 @@ header {
   text-align: center;
 }
 header .logo {
-  margin: 20px 0PX 20PX 0PX;
+  width: 50%;
   display: FLEX;
   justify-content: center;
   object-fit: cover;
-}
-header .logo img {
-  width: 50%;
+  padding: 20px 0px 20px;
 }
 header .loc {
-  padding: 20px 0px;
+  text-align: center;
+  padding: 20px 0px 20px;
   background-color: #EAEAEA;
   width: 100%;
   display: flex;
@@ -29,13 +28,14 @@ header .loc {
   color: black;
 }
 header .loc .fa-location-dot {
-  margin-right: 10px;
+  margin-left: 10%;
 }
-header .loc .input {
+header .loc input {
   font-size: large;
   background-color: #EAEAEA;
   border: none;
   color: black;
+  margin-left: 3%;
 }
 header .calltoaction {
   display: flex;
@@ -77,7 +77,8 @@ header .calltoaction h2 {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
+  padding: 20px 0 20px;
 }
 .header__alafrancaise__logoretouri {
   position: absolute;
@@ -85,6 +86,9 @@ header .calltoaction h2 {
 .header__alafrancaise__logoretour img {
   display: flex;
   justify-content: center;
+  width: 50%;
+  position: relative;
+  right: 25%;
 }
 .header__alafrancaise__banniere {
   width: 100%;
@@ -200,12 +204,13 @@ header .calltoaction h2 {
   font-size: 20px;
 }
 
+/* PAGES  ------------------------------------------ */
 .menu {
   border-radius: 30px 30px 30px;
   position: absolute;
   top: 370px;
   width: 99.5%;
-  background-color: white;
+  background-color: #F7F7F7;
   font-family: "Roboto";
   display: flex;
   flex-direction: column;
@@ -219,10 +224,10 @@ header .calltoaction h2 {
   font-family: "Shrikhand";
 }
 .menu .menu__title h1 {
-  margin-left: 55px;
+  margin-left: 20px;
 }
 .menu .menu__title i {
-  margin-right: 55px;
+  margin-right: 20px;
 }
 .menu .menu__cardlist {
   display: flex;
@@ -230,59 +235,84 @@ header .calltoaction h2 {
   flex-wrap: wrap;
   justify-content: center;
 }
-.menu .menu__cardlist h2 {
+@media screen and (max-width: 768px) {
+  .menu .menu__cardlist {
+    justify-content: flex-start;
+  }
+}
+.menu .menu__decoration {
   display: flex;
   width: 100%;
-  justify-content: center;
+  justify-content: flex-start;
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 15px;
 }
-.menu .menu__cardlist .menu__cards {
+.menu .menu__decoration span {
+  border-bottom: 3px #99E2D0 solid;
+}
+.menu .menu__cards {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   flex-wrap: wrap;
-  box-shadow: 2px 4px 10px rgb(173, 173, 173);
-  border-radius: 20px;
+  box-shadow: 2px 2px 5px rgb(217, 215, 215);
+  border-radius: 10px;
   margin-bottom: 20px;
   width: 40%;
   animation: animemenu 1s linear;
 }
-.menu .menu__cardlist .menu__cards .menu__info {
+@media screen and (max-width: 768px) {
+  .menu .menu__cards {
+    width: 100%;
+  }
+}
+.menu .menu__cards .menu__info {
   padding-left: 15px;
 }
-.menu .menu__cardlist .menu__cards .menu__prix {
+.menu .menu__cards .menu__prix {
   padding-right: 15px;
+  font-weight: 500;
 }
-.menu .menu__cardlist .menu__cards:hover .menu__checkanime {
+.menu .menu__cards:hover .menu__checkanime {
   width: 20%;
   display: flex;
   align-items: center;
   justify-content: center;
   color: white;
 }
-.menu .menu__cardlist p {
-  font-size: small;
+.menu .menu__cards p {
+  font-size: 16px;
+  line-height: 0%;
+  margin-left: 10px;
+  font-weight: 300;
 }
-.menu .menu__cardlist .menu__checkanime {
+.menu .menu__cards h3 {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  font-size: 18PX;
+  font-weight: 500;
+  margin-left: 10px;
+  line-height: 0%;
+}
+.menu .menu__cards .menu__checkanime {
   display: none;
   background: #99E2D0;
   border-radius: 0px 20px 20px 0;
   width: 0;
   transition: width 8s ease;
 }
-.menu .menu__cardlist h3 {
-  width: 100%;
-  display: flex;
-  justify-content: flex-start;
-  font-size: medium;
-  font-style: bold;
-}
-.menu .menu__column {
+
+.menu__column {
   margin-right: 20px;
   margin-left: 20px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
+  list-style: none;
+  padding-left: 0;
 }
 
 body {
@@ -297,20 +327,12 @@ body {
     opacity: 1;
   }
 }
-.menu__cardlist li:nth-child(1) {
+.menu__column li:nth-child(1) {
   animation-delay: 0.5s;
 }
 
-.menu__cardlist .cards:nth-child(2) {
-  animation-delay: 1s;
-}
-
-.menu__cardlist .cards:nth-child(3) {
+.menu__column li:nth-child(2) {
   animation-delay: 1.5s;
-}
-
-.menu__cardlist li:nth-child(2) {
-  animation-delay: 2s;
 }
 
 .commentfaire {
@@ -330,6 +352,7 @@ body {
 @media screen and (max-width: 768px) {
   .commentfaire__list {
     flex-direction: column;
+    margin-right: 20px;
   }
 }
 .commentfaire__card {

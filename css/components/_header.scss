@@ -5,25 +5,31 @@ align-items: center;
 width: 100%;
 
 text-align: center;
- .logo {margin: 20px 0PX 20PX 0PX;;
+ .logo {width: 50%;
 display: FLEX;
 justify-content: center;
 object-fit: cover;
-img {width:50%;}}
-    .loc { padding: 20px 0px ;
+padding: 20px 0px 20px;
+
+}
+    .loc { text-align: center;
+        padding: 20px 0px 20px;
         background-color: #EAEAEA;
         width: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
         color: black;   
-        .fa-location-dot {
-            margin-right: 10px;}
-        .input{
+        
+        .fa-location-dot {margin-left: 10%;
+            }
+        input{
             font-size: large;
             background-color: #EAEAEA;
             border: none;
-            color: black
+            color: black;
+            margin-left: 3%;
+          
              }
        
     }  
@@ -55,12 +61,16 @@ img {width:50%;}}
         display: flex;
         flex-direction: row;
    align-items: center;
-   justify-content: center;
+   justify-content: space-between;
+   padding: 20px 0 20px;
     &i {position: absolute;
         
     }
     & img {display: flex;
-    justify-content: center;}
+    justify-content: center;
+width: 50%;
+position: relative;
+right: 25%;}
   }
   &__banniere {
     width: 100%;
