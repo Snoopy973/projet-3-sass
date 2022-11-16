@@ -6,20 +6,29 @@
   <link rel="stylesheet" href="css/style.css">
   <script src="https://kit.fontawesome.com/9ce3089555.js" crossorigin="anonymous"></script>
   <link href="https://fonts.googleapis.com/css2?family=Oswald&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Shrikhand&display=swap" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </head>
 <body>
+  <div class="loader">
+    <p class="loader__logo">ohmyfood</p>
+    <i class="fa-solid fa-heart"></i>
+  </div>
   <header>
     <a class="logo">
         <img src="images/logo/ohmyfood.png" alt="logo ohmyfood"/>
     </a>
     <div class="loc">
-      <i class="fa-solid fa-location-dot"></i>
-      <input type="text"
-      name="recherche"
-      placeholder="Paris, Belleville"
-      class="input">
-      </input>
+      <div class="loc__content">
+        <i class="fa-solid fa-location-dot"></i>
+        <input type="text"
+        name="recherche"
+        placeholder="Paris, Belleville"
+        class="input">
+        </input>
+      </div>
     </div>
       <div class="calltoaction">
           <h1>Réservez le menu qui vous convient</h1>
@@ -58,7 +67,7 @@
         <div class="resto__list">
 
 
-            <a class="resto__cards">
+            <a href="lapalettedugout.html" class="resto__cards">
               <img src="./images/restaurants/lapalettedugout.jpg" alt="restaurant à menil montant"></img>
               <p class="resto__new">Nouveau</p>
               <div class=resto__info>
@@ -75,29 +84,28 @@
       
 
       
-        <a class="resto__cards">
+        <a href="lanoteenchantee.html" class="resto__cards">
           <img src="./images/restaurants/lanoteenchantee.jpg" alt="restaurant à menil montant"></img>
           <p class="resto__new">Nouveau</p>
-          <div class="resto__info"></div>
-          <div class=resto__title>
-            <h3>La palette du goût</h3>
-            <p>Ménilmontant</p>
+          <div class="resto__info">
+            <h3>La note enchantée</h3>
+            <p>Charonne</p>
           </div>
         <div class="resto__like">
           <div class="resto__coeurvide">
             <i class="fa-regular fa-heart"></i></div>
          <div class="resto__coeurplein"> 
           <i class="fa-solid fa-heart"></i></div>
-        </div></div>
+        </div>
   </a>
   
 
 
-      <a class="resto__cards">
+      <a href="alafrancaise.html" class="resto__cards">
           <img src="./images/restaurants/alafrancaise.jpg" alt="restaurant à menil montant"></img>
           <div class=resto__info>
-            <h3 class="resto__name">La palette du goût</h3>
-            <p class="resto__city">Ménilmontant</p>
+            <h3 class="resto__name">À la française</h3>
+            <p>Cité Rouge</p>
           </div>
           <div class="resto__like">
             <div class="resto__coeurvide">
@@ -107,11 +115,11 @@
           </div>
         </a>
 
-        <a class="resto__cards">
-          <img src="./images/restaurants/lanoteenchantee.jpg" alt="restaurant à menil montant"></img>
+        <a href="ledelicesens.html" class="resto__cards">
+          <img src="./images/restaurants/ledelicedessens.jpg" alt="restaurant"></img>
           <div class=resto__info>
-            <h3>La palette du goût</h3>
-            <p>Ménilmontant</p>
+            <h3>Le délice des sens</h3>
+            <p>Folie-Méricourt</p>
         </div>
         <div class="resto__like">
           <div class="resto__coeurvide">
@@ -131,7 +139,18 @@
     </div>
   </div>
 
-  
+  <footer>
+    <img src="images/logo/ohmyfood.png" alt="logo ohmyfood"/>
+    <div class="footer__proposallist">
+    <div class="footer__proposal"><i class="fa-solid fa-utensils"></i>
+    <p>Proposer un restaurant</p></div> 
+  <div class="footer__proposal">
+    <i class="fa-solid fa-handshake-angle"></i>
+      <p>Devenir partenaire</p></div> 
+  <p class="footer__proposal">Mentions légales</p> 
+  <p class="footer__proposal">Contact</p> 
+</div>
+  </footer>
 
 </body>
 </html>
