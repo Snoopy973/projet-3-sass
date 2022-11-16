@@ -10,29 +10,48 @@ display: FLEX;
 justify-content: center;
 object-fit: cover;
 padding: 20px 0px 20px;
+object-position: top;
+
+img {@media screen and (max-width :768px) {width: 100%;}}
 
 }
     .loc { text-align: center;
         padding: 20px 0px 20px;
         background-color: #EAEAEA;
         width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        color: black;   
+      
         
-        .fa-location-dot {margin-left: 10%;
-            }
+        
+        color: black;  
+    &__content {display: flex;
+        justify-content: center;
+        text-align: center;
+        
+    
+        align-items: center;
+        
+    }
+    i {margin-right: 10px;}
+        
+        
         input{
-            font-size: large;
+            font-size: 15px;
             background-color: #EAEAEA;
             border: none;
             color: black;
-            margin-left: 3%;
+            width: 110px;
+            ;
+            
+            
           
              }
+
+        input::placeholder {color: black;
+        }
        
     }  
+
+
         .calltoaction {
             display:flex;
             flex-direction: column;;
@@ -62,26 +81,75 @@ padding: 20px 0px 20px;
         flex-direction: row;
    align-items: center;
    justify-content: space-between;
-   padding: 20px 0 20px;
-    &i {position: absolute;
+   padding: 15px 0 15px;
+   & a {display: flex;
+    align-items: center;}
+    & i {position: absolute;
+        font-size: 45px;
+        font-size:xx-large;
+        display: flex;
+        justify-content: flex-start;
         
+        margin-left: 20px;
+    flex-direction: row;
+    @media screen and (max-width :768px){font-size:25px;}
+
     }
     & img {display: flex;
     justify-content: center;
-width: 50%;
+    width:20% ;
+
 position: relative;
-right: 25%;}
+margin: auto;
+object-fit: cover;
+
+@media screen and (max-width :768px){width: 50%;}
+}
   }
-  &__banniere {
-    width: 100%;
-   img {width: 100%;
-    height: 350px;
-    object-fit: cover;
-}}
+
     
-    & i {font-size:xx-large;
-    display: flex;
-    justify-content: flex-start;
-flex-direction: row;}
+    
+   .banner__lanoteenchantee {width: 100%;
+    background-image: url('../images/restaurants/lanoteenchantee.jpg');
+    height: 350px;
+    background-size:cover;
+    background-position: center;
+    margin-bottom: -25px;
+   z-index:-1;
+   @media screen and (max-width :768px){height: 200px;}
+}
+  
+ 
+   .banner__alafrancaise {width: 100%;
+    background-image: url('../images/restaurants/alafrancaise.jpg');
+    height: 350px;
+    background-size:cover;
+    background-position: center;
+    margin-bottom: -25px;
+   z-index:-1;
+
+}
+
+.banner__ledelicedessens {width: 100%;
+    background-image: url('../images/restaurants/ledelicedessens.jpg');
+    height: 350px;
+    background-size:cover;
+    background-position: center;
+    margin-bottom: -25px;
+   z-index:-1;
+
+}
+
+.banner__lapalettedugout {width: 100%;
+    background-image: url('../images/restaurants/lapalettedugout.jpg');
+    height: 350px;
+    background-size:cover;
+    background-position: center;
+    margin-bottom: -25px;
+   z-index:-1;
+
+}
+    
+  
 }
     
