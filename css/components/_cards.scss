@@ -143,7 +143,7 @@ justify-content: flex-start;
         border-bottom: 3px $tertiarycolor solid;
     }}
 
-    li {display: flex;
+    article {display: flex;
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: nowrap;
@@ -161,10 +161,7 @@ justify-content: flex-start;
         width: 100%;
         white-space: nowrap;
 overflow: hidden;
-text-overflow: ellipsis;
-        
-
-        
+text-overflow: ellipsis;     
     }
     .menu__prix {padding-right: 15px;
     font-weight: 500;
@@ -175,8 +172,7 @@ align-items: flex-end;
 
 &:hover{
     .menu__checkanime {
-        width: 20%;
-        
+        width: 20%; 
        
 }
 .menu--checkicon {display: flex;
@@ -212,8 +208,6 @@ font-size: 22px;}
 margin-left: 10px;
 font-weight: 300;
 
-
-
 }
 & h3 {width: 100%;
     display: flex;
@@ -222,20 +216,17 @@ font-weight: 300;
     font-weight: 500;
     margin-left: 10px;
     line-height: 0%;
- 
-    
-    
-    
-  
+
 }
-
-
 }
 .menu__commander {@include btn-gradende;
     margin: auto;
     width: 200px;
     margin-top: 20px ;
-
+    transition-property: transform;
+    transform: scale(1);
+    &:hover {transform: scale(1.15);
+        box-shadow: -1px 3px 26px 5px rgb(0 0 0 / 40%);}
    }
 
     .menu__column {margin-right: 20px;
@@ -274,6 +265,7 @@ font-weight: 300;
 
 body{
 margin: 0;
+
 
 }
 
