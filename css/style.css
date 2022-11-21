@@ -331,7 +331,7 @@ section .menu__decoration {
 section .menu__decoration span {
   border-bottom: 3px #99E2D0 solid;
 }
-section li {
+section article {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -342,11 +342,11 @@ section li {
   width: 100%;
 }
 @media screen and (max-width: 768px) {
-  section li {
+  section article {
     width: 100%;
   }
 }
-section li .menu__info {
+section article .menu__info {
   display: flex;
   justify-content: flex-start;
   flex-wrap: wrap;
@@ -355,30 +355,30 @@ section li .menu__info {
   overflow: hidden;
   text-overflow: ellipsis;
 }
-section li .menu__prix {
+section article .menu__prix {
   padding-right: 15px;
   font-weight: 500;
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
 }
-section li:hover .menu__checkanime {
+section article:hover .menu__checkanime {
   width: 20%;
 }
-section li:hover .menu--checkicon {
+section article:hover .menu--checkicon {
   display: flex;
   justify-content: center;
 }
 @media screen and (max-width: 768px) {
-  section li:active .menu__checkanime {
+  section article:active .menu__checkanime {
     width: 28%;
   }
-  section li:active .menu--checkicon {
+  section article:active .menu--checkicon {
     display: flex;
     justify-content: center;
   }
 }
-section li .menu__checkanime {
+section article .menu__checkanime {
   display: flex;
   border-radius: 0px 10px 10px 0;
   width: 0%;
@@ -388,18 +388,18 @@ section li .menu__checkanime {
   background: #99E2D0;
   transition: width 1s ease-in-out;
 }
-section li .menu--checkicon {
+section article .menu--checkicon {
   display: none;
   width: 0%;
   font-size: 22px;
 }
-section li p {
+section article p {
   font-size: 16px;
   line-height: 0%;
   margin-left: 10px;
   font-weight: 300;
 }
-section li h3 {
+section article h3 {
   width: 100%;
   display: flex;
   justify-content: flex-start;
@@ -421,6 +421,12 @@ section .menu__commander {
   margin: auto;
   width: 200px;
   margin-top: 20px;
+  transition-property: transform;
+  transform: scale(1);
+}
+section .menu__commander:hover {
+  transform: scale(1.15);
+  box-shadow: -1px 3px 26px 5px rgba(0, 0, 0, 0.4);
 }
 section .menu__column {
   margin-right: 20px;
