@@ -31,9 +31,19 @@ align-items: center;
 margin-left: 20px;
 line-height: 0%;
 
+
 }
 
-p {margin-left: 10px;}
+p {margin-left: 10px;
+color: white;}
+
+#footer__contact  {display: flex;
+    flex-wrap: nowrap;
+align-items: center;
+margin-left: 20px;
+
+color: white;
+}
 
 .footer__proposallist {display: flex;
     flex-direction: row;

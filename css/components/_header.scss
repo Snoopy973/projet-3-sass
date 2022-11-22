@@ -61,8 +61,13 @@ img {@media screen and (max-width :768px) {width: 100%;}}
             
             .header__btn {@include btn-gradende;
             margin: 20px;
+            transition-property: transform;
+            transform: scale(1);
+            &:hover {transform: scale(1.15);
+                box-shadow: -1px 3px 26px 5px rgb(0 0 0 / 40%);
+            opacity: 0.9;}
             @media screen and (max-width :768px) 
-            {width: 70%;}}
+            {width: 65%;}}
             
             h2 {margin: 20px;
                 font-size: 30px;
