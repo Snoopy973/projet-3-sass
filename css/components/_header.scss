@@ -58,16 +58,26 @@ img {@media screen and (max-width :768px) {width: 100%;}}
             background-color: #F7F7F7;
             width:100%;
             align-items: center;
+            padding-bottom: 7%;
+        & p {margin: 0% 3% 2%;
+        font-size: 18px;
+    font-weight: 300;}
+    & h1 {font-size: 26px;
+    font-weight: 300px;
+    margin: 7% 15% 4%;
+}
+    
             
             .header__btn {@include btn-gradende;
             margin: 20px;
             transition-property: transform;
             transform: scale(1);
+            
             &:hover {transform: scale(1.15);
                 box-shadow: -1px 3px 26px 5px rgb(0 0 0 / 40%);
             opacity: 0.9;}
             @media screen and (max-width :768px) 
-            {width: 65%;}}
+            {width: 60%;}}
             
             h2 {margin: 20px;
                 font-size: 30px;
@@ -132,7 +142,7 @@ object-fit: cover;
     background-position: center;
     margin-bottom: -25px;
    z-index:-1;
-
+   @media screen and (max-width :768px){height: 200px;}
 }
 
 .banner__ledelicedessens {width: 100%;
@@ -142,7 +152,7 @@ object-fit: cover;
     background-position: center;
     margin-bottom: -25px;
    z-index:-1;
-
+@media screen and (max-width :768px){height: 200px;}
 }
 
 .banner__lapalettedugout {width: 100%;
@@ -152,6 +162,7 @@ object-fit: cover;
     background-position: center;
     margin-bottom: -25px;
    z-index:-1;
+   @media screen and (max-width :768px){height: 200px;}
 
 }
     

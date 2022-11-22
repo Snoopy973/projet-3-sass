@@ -55,6 +55,17 @@ header .calltoaction {
   background-color: #F7F7F7;
   width: 100%;
   align-items: center;
+  padding-bottom: 7%;
+}
+header .calltoaction p {
+  margin: 0% 3% 2%;
+  font-size: 18px;
+  font-weight: 300;
+}
+header .calltoaction h1 {
+  font-size: 26px;
+  font-weight: 300px;
+  margin: 7% 15% 4%;
 }
 header .calltoaction .header__btn {
   background: linear-gradient(#FF79DA, #9356DC);
@@ -77,7 +88,7 @@ header .calltoaction .header__btn:hover {
 }
 @media screen and (max-width: 768px) {
   header .calltoaction .header__btn {
-    width: 65%;
+    width: 60%;
   }
 }
 header .calltoaction h2 {
@@ -153,6 +164,11 @@ header .calltoaction h2 {
   margin-bottom: -25px;
   z-index: -1;
 }
+@media screen and (max-width: 768px) {
+  .header__alafrancaise .banner__alafrancaise {
+    height: 200px;
+  }
+}
 .header__alafrancaise .banner__ledelicedessens {
   width: 100%;
   background-image: url("../images/restaurants/ledelicedessens.jpg");
@@ -162,6 +178,11 @@ header .calltoaction h2 {
   margin-bottom: -25px;
   z-index: -1;
 }
+@media screen and (max-width: 768px) {
+  .header__alafrancaise .banner__ledelicedessens {
+    height: 200px;
+  }
+}
 .header__alafrancaise .banner__lapalettedugout {
   width: 100%;
   background-image: url("../images/restaurants/lapalettedugout.jpg");
@@ -170,6 +191,11 @@ header .calltoaction h2 {
   background-position: center;
   margin-bottom: -25px;
   z-index: -1;
+}
+@media screen and (max-width: 768px) {
+  .header__alafrancaise .banner__lapalettedugout {
+    height: 200px;
+  }
 }
 
 .resto {
@@ -297,7 +323,7 @@ section {
 }
 @media screen and (max-width: 768px) {
   section {
-    top: 345px;
+    top: 330px;
   }
 }
 section .menu__title {
@@ -423,7 +449,7 @@ section article .menu__checkanime {
   justify-content: center;
   color: white;
   background: #99E2D0;
-  transition: width 1s ease;
+  transition: width 1s;
 }
 section article .menu--checkicon {
   display: none;
