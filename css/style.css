@@ -9,6 +9,7 @@ header {
   align-items: center;
   width: 100%;
   text-align: center;
+  /*callaction*/
 }
 header .logo {
   width: 50%;
@@ -55,17 +56,29 @@ header .calltoaction {
   background-color: #F7F7F7;
   width: 100%;
   align-items: center;
-  padding-bottom: 7%;
+}
+@media screen and (max-width: 768px) {
+  header .calltoaction {
+    padding-bottom: 7%;
+  }
 }
 header .calltoaction p {
-  margin: 0% 3% 2%;
   font-size: 18px;
   font-weight: 300;
+}
+@media screen and (max-width: 768px) {
+  header .calltoaction p {
+    margin: 2% 5% 2%;
+  }
 }
 header .calltoaction h1 {
   font-size: 26px;
   font-weight: 300px;
-  margin: 7% 15% 4%;
+}
+@media screen and (max-width: 768px) {
+  header .calltoaction h1 {
+    margin: 7% 15% 4%;
+  }
 }
 header .calltoaction .header__btn {
   background: linear-gradient(#FF79DA, #9356DC);
@@ -418,6 +431,23 @@ section article .menu__info {
   overflow: hidden;
   text-overflow: ellipsis;
 }
+section article .menu__description1 {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 100%;
+  font-size: 18PX;
+  font-weight: 500;
+  margin-left: 10px;
+}
+section article .menu__description2 {
+  font-size: 16px;
+  margin-left: 10px;
+  font-weight: 300;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
 section article .menu__prix {
   padding-right: 15px;
   font-weight: 500;
@@ -458,7 +488,7 @@ section article .menu--checkicon {
 }
 section article p {
   font-size: 16px;
-  line-height: 0%;
+  line-height: 15px;
   margin-left: 10px;
   font-weight: 300;
 }
@@ -604,6 +634,7 @@ footer .footer__proposallist {
   }
 }
 
+/*fin*/
 .commentfaire {
   display: flex;
   flex-direction: column;
@@ -671,7 +702,7 @@ footer .footer__proposallist {
   margin-left: 5%;
 }
 
-/*&__card,&__card i:hover {background-color:#F5EDFF ;*/
+/*FIN*/
 .loader {
   position: fixed;
   z-index: 2;
@@ -744,5 +775,6 @@ footer .footer__proposallist {
     color: #FF79DA;
   }
 }
+/*fin*/
 
 /*# sourceMappingURL=style.css.map */

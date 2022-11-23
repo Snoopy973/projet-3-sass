@@ -201,6 +201,23 @@ margin-left: 1%;
 overflow: hidden;
 text-overflow: ellipsis;     
     }
+    .menu__description1 {  white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis; 
+        width: 100%;
+        font-size: 18PX;
+        font-weight: 500;
+        margin-left: 10px;
+        
+         }
+    .menu__description2 {font-size: 16px;
+        
+        margin-left: 10px;
+        font-weight: 300;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis; 
+    }
     .menu__prix {padding-right: 15px;
     font-weight: 500;
 display:flex;
@@ -241,7 +258,7 @@ transition: width 1s;
 width: 0%;
 font-size: 22px;}
 & p {font-size: 16px;
-    line-height: 0%;
+    line-height: 15px;
 margin-left: 10px;
 font-weight: 300;
 
@@ -318,8 +335,9 @@ margin: 0;
 
     100% {opacity:1;}
 
+   
+
 }
 a {text-decoration: none;
 color: black;}
 
-/*fin*/
