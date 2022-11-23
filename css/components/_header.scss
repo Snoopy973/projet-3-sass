@@ -51,20 +51,24 @@ img {@media screen and (max-width :768px) {width: 100%;}}
        
     }  
 
-
+/*callaction*/
         .calltoaction {
             display:flex;
             flex-direction: column;;
             background-color: #F7F7F7;
             width:100%;
             align-items: center;
-            padding-bottom: 7%;
-        & p {margin: 0% 3% 2%;
+            
+            @media screen and (max-width :768px){padding-bottom: 7%;}
+        & p {
         font-size: 18px;
-    font-weight: 300;}
+    font-weight: 300;
+    @media screen and (max-width :768px){margin: 2% 5% 2%;}
+}
     & h1 {font-size: 26px;
     font-weight: 300px;
-    margin: 7% 15% 4%;
+    
+    @media screen and (max-width :768px){margin: 7% 15% 4%;}
 }
     
             
