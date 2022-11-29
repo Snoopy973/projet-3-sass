@@ -73,7 +73,7 @@ header .calltoaction p {
 }
 header .calltoaction h1 {
   font-size: 26px;
-  font-weight: 300px;
+  font-weight: 600;
 }
 @media screen and (max-width: 768px) {
   header .calltoaction h1 {
@@ -256,21 +256,17 @@ header .calltoaction h2 {
   -webkit-background-clip: text;
   color: transparent;
   background-image: linear-gradient(#9356DC, #FF79DA);
-  transform: translate(0);
   transition: all 1s;
   opacity: 0;
 }
 .resto__cards:hover .fa-solid {
-  transform: translate(1);
   opacity: 1;
 }
 .resto__cards .fa-light {
-  transform: translate(1);
   transition: all 1s;
   opacity: 1;
 }
 .resto__cards:hover .fa-light {
-  transform: translate(0);
   opacity: 0;
 }
 @media screen and (max-width: 768px) {
@@ -365,21 +361,17 @@ section .menu__title .fa-solid {
   -webkit-background-clip: text;
   color: transparent;
   background-image: linear-gradient(#9356DC, #FF79DA);
-  transform: translate(0);
   transition: all 1s;
   opacity: 0;
 }
 section .menu__title:hover .fa-solid {
-  transform: translate(1);
   opacity: 1;
 }
 section .menu__title .fa-light {
-  transform: translate(1);
   transition: all 1s;
   opacity: 1;
 }
 section .menu__title:hover .fa-light {
-  transform: translate(0);
   opacity: 0;
 }
 section .menu__cardlist {
@@ -488,7 +480,6 @@ section article .menu--checkicon {
 }
 section article p {
   font-size: 16px;
-  line-height: 15px;
   margin-left: 10px;
   font-weight: 300;
 }

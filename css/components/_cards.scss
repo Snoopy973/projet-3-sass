@@ -34,22 +34,22 @@
             -webkit-background-clip: text;
             color: transparent;
             background-image: linear-gradient($primarycolor, $secondarycolor);
-            transform:translate(0);
+           
             transition: all 1s;
             opacity: 0;  
             }  
             &:hover .fa-solid{
-                transform: translate(1);
+                
                 opacity: 1;
             }
         
             .fa-light{
-                transform: translate(1);
+            
                 transition: all 1s;
                 opacity: 1;
             }  
             &:hover .fa-light{
-            transform: translate(0);
+            
             opacity: 0;
             }
         @media screen and (max-width :768px){width: 100%;}
@@ -134,22 +134,20 @@ font-size: 22px;}
     -webkit-background-clip: text;
     color: transparent;
     background-image: linear-gradient($primarycolor, $secondarycolor);
-    transform:translate(0);
+    
     transition: all 1s;
     opacity: 0;  
     }  
     &:hover .fa-solid{
-        transform: translate(1);
         opacity: 1;
     }
 
     .fa-light{
-        transform: translate(1);
         transition: all 1s;
         opacity: 1;
     }  
     &:hover .fa-light{
-    transform: translate(0);
+    
     opacity: 0;
     }
 
@@ -209,14 +207,17 @@ text-overflow: ellipsis;
         font-weight: 500;
         margin-left: 10px;
         
-         }
+        
+        }
     .menu__description2 {font-size: 16px;
+        
         
         margin-left: 10px;
         font-weight: 300;
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis; 
+        
     }
     .menu__prix {padding-right: 15px;
     font-weight: 500;
@@ -258,7 +259,6 @@ transition: width 1s;
 width: 0%;
 font-size: 22px;}
 & p {font-size: 16px;
-    line-height: 15px;
 margin-left: 10px;
 font-weight: 300;
 
