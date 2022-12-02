@@ -191,9 +191,8 @@ margin-left: 1%;
     
  @media screen and (max-width :768px){width: 100%;}
 
-    .menu__info {display: flex;
-        justify-content: flex-start;
-        flex-wrap: wrap;
+    .menu__info {
+        
         width: 100%;
         white-space: nowrap;
 overflow: hidden;
