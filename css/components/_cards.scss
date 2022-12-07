@@ -37,21 +37,22 @@
            
             transition: all 1s;
             opacity: 0;  
-            }  
-            &:hover .fa-solid{
+            &:hover{
                 
                 opacity: 1;
             }
         
+            }  
+           
             .fa-light{
             
                 transition: all 1s;
                 opacity: 1;
+                &:hover {
+                    opacity: 0;
+                    }
             }  
-            &:hover .fa-light{
             
-            opacity: 0;
-            }
         @media screen and (max-width :768px){width: 100%;}
         
     

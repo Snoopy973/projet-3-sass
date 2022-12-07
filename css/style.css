@@ -259,14 +259,14 @@ header .calltoaction h2 {
   transition: all 1s;
   opacity: 0;
 }
-.resto__cards:hover .fa-solid {
+.resto__cards .fa-solid:hover {
   opacity: 1;
 }
 .resto__cards .fa-light {
   transition: all 1s;
   opacity: 1;
 }
-.resto__cards:hover .fa-light {
+.resto__cards .fa-light:hover {
   opacity: 0;
 }
 @media screen and (max-width: 768px) {
